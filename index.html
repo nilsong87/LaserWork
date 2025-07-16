@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Work - Recarga de Cartuchos e Locação de Impressoras</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="fw-bold" style="color: var(--primary-color); font-size: 1.5rem;">LASER WORK</span>
+                <small class="d-block" style="font-size: 0.7rem; color: var(--dark-color);">Tecnologia em Impressão</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#locacao">Locação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+                <a href="#contato" class="btn btn-primary ms-lg-3">
+                    <i class="fas fa-phone-alt me-2"></i>Orçamento
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">Soluções em Impressão para seu Escritório</h1>
+                    <p class="lead mb-4 animate__animated animate__fadeIn animate__delay-1s">Recarga de cartuchos, venda de toners e locação de impressoras com a melhor qualidade do mercado.</p>
+                    <div class="animate__animated animate__fadeIn animate__delay-2s">
+                        <a href="#servicos" class="btn btn-primary btn-lg me-2">Nossos Serviços</a>
+                        <a href="tel:+5511999999999" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone-alt me-2"></i>(11) 99999-9999
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block animate__animated animate__fadeInRight">
+                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a9e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Impressora" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Benefícios -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="d-flex">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-truck fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Entrega Rápida</h5>
+                            <p class="text-muted mb-0">Entregamos em até 2 horas na região metropolitana.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-medal fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Qualidade Garantida</h5>
+                            <p class="text-muted mb-0">Toners e cartuchos com garantia de 6 meses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex">
+                        <div class="me-3 text-primary">
+                            <i class="fas fa-headset fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Suporte Técnico</h5>
+                            <p class="text-muted mb-0">Atendimento especializado 24/7 para emergências.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nossos Serviços</h2>
+                <p class="text-muted">Soluções completas para suas necessidades de impressão</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-fill-drip"></i>
+                        </div>
+                        <h4>Recarga de Cartuchos</h4>
+                        <p class="text-muted">Recarga profissional com tinta de alta qualidade para todas as marcas.</p>
+                        <a href="#" class="btn btn-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h4>Venda de Toners</h4>
+                        <p class="text-muted">Toners originais e compatíveis com garantia de qualidade.</p>
+                        <a href="#" class="btn btn-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h4>Locação de Impressoras</h4>
+                        <p class="text-muted">Soluções completas de impressão sem preocupação com manutenção.</p>
+                        <a href="#" class="btn btn-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card card h-100 p-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Manutenção</h4>
+                        <p class="text-muted">Conserto e manutenção preventiva para todos os modelos.</p>
+                        <a href="#" class="btn btn-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Produtos em Destaque</h2>
+                <p class="text-muted">Materiais de escritório e suprimentos para impressão</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <span class="badge-discount">10% OFF</span>
+                        <img src="https://images.unsplash.com/photo-1583947581924-a23d8ed53ccc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Cartucho HP">
+                        <div class="card-body">
+                            <h5 class="card-title">Cartucho HP 664XL</h5>
+                            <p class="text-muted">Compatível - Alta Capacidade</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">R$ 89,90</span>
+                                <del class="text-muted small">R$ 99,90</del>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Toner Brother">
+                        <div class="card-body">
+                            <h5 class="card-title">Toner Brother TN-2250</h5>
+                            <p class="text-muted">Original - Alta Durabilidade</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">R$ 199,90</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <span class="badge-discount">Frete Grátis</span>
+                        <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Papel A4">
+                        <div class="card-body">
+                            <h5 class="card-title">Papel A4 75g 500 folhas</h5>
+                            <p class="text-muted">Chamex - Pacote com 5 resmas</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">R$ 129,90</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Impressora Multifuncional">
+                        <div class="card-body">
+                            <h5 class="card-title">Impressora Epson EcoTank</h5>
+                            <p class="text-muted">Tanque de tinta - Econômica</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">R$ 1.299,90</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary">Ver todos os produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Locação -->
+    <section id="locacao" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Locação de Impressoras" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Locaçã<strong class="text-primary">o</strong> de Impressoras</h2>
+                    <p>Oferecemos soluções completas em locação de equipamentos de impressão para sua empresa. Sem preocupação com manutenção, suprimentos ou atualização de equipamentos.</p>
+                    
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Planos flexíveis</strong> - mensal, trimestral ou anual</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Manutenção inclusa</strong> - sem custos adicionais</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Suporte 24h</strong> - para emergências</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> <strong>Atualização de equipamentos</strong> - sempre tecnologia atual</li>
+                    </ul>
+                    
+                    <a href="#contato" class="btn btn-primary mt-3">Solicitar proposta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Marcas -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Trabalhamos com as Melhores Marcas</h2>
+                <p class="text-muted">Parceiros e fornecedores de qualidade</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+            
+            <div class="brands-section d-flex flex-wrap justify-content-center align-items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/HP_logo_2012.svg" alt="HP" title="HP">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Epson_logo.svg" alt="Epson" title="Epson">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Brother_logo.svg" alt="Brother" title="Brother">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Canon_Logo.svg" alt="Canon" title="Canon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Samsung_Logo.svg" alt="Samsung" title="Samsung">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">O que nossos clientes dizem</h2>
+                <p>Depoimentos de quem já utiliza nossos serviços</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: white;"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card card p-4 h-100 bg-white text-dark">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-0">Ana Silva</h5>
+                                <small class="text-muted">Escritório Contábil</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-0">"Há 3 anos utilizamos os serviços da Laser Work e nunca tivemos problemas. A entrega é sempre rápida e os cartuchos têm ótima duração."</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card card p-4 h-100 bg-white text-dark">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-0">Carlos Mendes</h5>
+                                <small class="text-muted">Clínica Médica</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-0">"Optamos pela locação de impressoras e foi a melhor decisão. Sempre que precisamos de suporte, a equipe da Laser Work resolve rapidamente."</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card card p-4 h-100 bg-white text-dark">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="rounded-circle me-3" width="60">
+                            <div>
+                                <h5 class="mb-0">Juliana Oliveira</h5>
+                                <small class="text-muted">Escola Particular</small>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="mb-0">"Comprei toners compatíveis e fiquei surpresa com a qualidade. Dura tanto quanto os originais por um preço muito mais acessível."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Entre em Contato</h2>
+                <p class="text-muted">Solicite um orçamento ou tire suas dúvidas</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Seu nome" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Empresa (opcional)">
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select">
+                                    <option selected>Qual serviço você precisa?</option>
+                                    <option>Recarga de cartuchos</option>
+                                    <option>Compra de toners</option>
+                                    <option>Locação de impressoras</option>
+                                    <option>Manutenção de equipamentos</option>
+                                    <option>Outros</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Informações de Contato</h4>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Endereço</h5>
+                                    <p class="mb-0">Av. Paulista, 1000 - 10º andar<br>São Paulo/SP - CEP 01310-100</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-phone-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Telefones</h5>
+                                    <p class="mb-0">(11) 1234-5678<br>(11) 98765-4321 (WhatsApp)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">E-mail</h5>
+                                    <p class="mb-0">contato@laserwork.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-clock fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Horário de Atendimento</h5>
+                                    <p class="mb-0">Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Mapa -->
+    <div class="bg-light">
+        <div class="container-fluid p-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975844554036!2d-46.658675924687!3d-23.56134617879928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1689873178816!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4">LASER WORK</h3>
+                    <p class="text-white-50">Soluções completas em recarga de cartuchos, venda de toners e locação de impressoras para seu escritório ou empresa.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="#servicos" class="text-white-50 text-decoration-none">Serviços</a></li>
+                        <li class="mb-2"><a href="#produtos" class="text-white-50 text-decoration-none">Produtos</a></li>
+                        <li class="mb-2"><a href="#locacao" class="text-white-50 text-decoration-none">Locação</a></li>
+                        <li class="mb-2"><a href="#contato" class="text-white-50 text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Serviços</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Recarga de Cartuchos</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Venda de Toners</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Locação de Impressoras</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Manutenção</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Materiais de Escritório</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Assine para receber promoções e dicas sobre impressão.</p>
+                    <form class="d-flex mb-3">
+                        <input type="email" class="form-control me-2" placeholder="Seu e-mail">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p class="small text-white-50">Ao assinar, você concorda com nossa Política de Privacidade.</p>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">&copy; 2023 Laser Work. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Termos de Serviço</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Scripts personalizados -->
+    <script src="script.js"></script>
+</body>
+</html>
