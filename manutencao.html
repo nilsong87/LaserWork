@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="css/manutencao.css">
-
 </head>
 
 <body>
@@ -25,8 +24,7 @@
         <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <span class="fw-bold" style="color: var(--primary-color); font-size: 1.5rem;">LASER WORK</span>
-                <small class="d-block" style="font-size: 0.7rem; color: var(--dark-color);">Tecnologia em
-                    Impressão</small>
+                <small class="d-block" style="font-size: 0.7rem; color: var(--dark-color);">Tecnologia em Impressão</small>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -335,21 +333,19 @@
                     <form id="formManutencao">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Seu nome" id="nome" required>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="tel" class="form-control" placeholder="Seu telefone" id="telefone"
-                                    required>
+                                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required>
                             </div>
                             <div class="col-12">
-                                <input type="email" class="form-control" placeholder="Seu e-mail" id="email">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control" placeholder="Marca e modelo da impressora"
-                                    id="impressora" required>
+                                <input type="text" class="form-control" id="marcaImpressora" name="marcaImpressora" placeholder="Marca e modelo da impressora" required>
                             </div>
                             <div class="col-12">
-                                <select class="form-select" id="problema" required>
+                                <select class="form-select" id="problema" name="problema" required>
                                     <option value="" selected>Tipo de problema</option>
                                     <option>Impressora não liga</option>
                                     <option>Papel engasgando</option>
@@ -361,8 +357,7 @@
                                 </select>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control" rows="5" placeholder="Descreva o problema com detalhes"
-                                    id="descricao" required></textarea>
+                                <textarea class="form-control" rows="5" placeholder="Descreva o problema com detalhes" id="descricao" name="descricao" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary w-100">Solicitar Orçamento</button>
@@ -513,6 +508,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Scripts personalizados -->
     <script>
+        // Fecha o menu mobile ao clicar em um link
         document.querySelectorAll('.navbar-collapse .nav-link').forEach(function (link) {
             link.addEventListener('click', function () {
                 var navbarCollapse = document.querySelector('.navbar-collapse');
@@ -522,27 +518,30 @@
                 }
             });
         });
-        // Evento para o formulário de manutenção
-        document.getElementById('formManutencao').addEventListener('submit', function (e) {
-            e.preventDefault();
 
-            var numero = '5571982559495';
-            var nome = document.getElementById('nome').value;
-            var telefone = document.getElementById('telefone').value;
-            var email = document.getElementById('email').value;
-            var impressora = document.getElementById('impressora').value;
-            var problema = document.getElementById('problema').value;
-            var descricao = document.getElementById('descricao').value;
+        // Evento para o formulário de manutenção (só se existir)
+        var form = document.getElementById('formManutencao');
+        if (form) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-            var texto = `Olá, meu nome é ${nome}\nTelefone: ${telefone}\nE-mail: ${email}\nImpressora: ${impressora}\nProblema: ${problema}\nDescrição: ${descricao}`;
-            var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+                var numero = '5571982559495';
+                var nome = document.getElementById('nome').value;
+                var telefone = document.getElementById('telefone').value;
+                var email = document.getElementById('email').value;
+                var marcaImpressora = document.getElementById('marcaImpressora').value;
+                var problema = document.getElementById('problema').value;
+                var descricao = document.getElementById('descricao').value;
 
-            window.open(url, '_blank');
-        });
+                var texto = `Olá, meu nome é ${nome}\nTelefone: ${telefone}\nE-mail: ${email}\nImpressora: ${marcaImpressora}\nProblema: ${problema}\nDescrição: ${descricao}`;
+                var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
-        // Animação ao rolar a página
+                window.open(url, '_blank');
+            });
+        }
+
+        // Suaviza a rolagem para links internos
         $(document).ready(function () {
-            // Suaviza a rolagem para links internos
             $('a[href^="#"]').on('click', function (event) {
                 var target = $(this.getAttribute('href'));
                 if (target.length) {

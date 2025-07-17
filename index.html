@@ -24,8 +24,7 @@
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <span class="fw-bold" style="color: var(--primary-color); font-size: 1.5rem;">LASER WORK</span>
-                <small class="d-block" style="font-size: 0.7rem; color: var(--dark-color);">Tecnologia em
-                    Impressão</small>
+                <small class="d-block" style="font-size: 0.7rem; color: var(--dark-color);">Tecnologia em Impressão</small>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -36,10 +35,10 @@
                         <a class="nav-link active" href="index.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#servicos">Serviços</a>
+                        <a class="nav-link" href="#servicos">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#produtos">Produtos</a>
+                        <a class="nav-link" href="#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="locacao.html">Locação</a>
@@ -466,16 +465,16 @@
                     <form id="formContato">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Seu nome" id="nome" required>
+                                <input type="text" class="form-control" placeholder="Seu nome" id="nome" name="nome" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Seu e-mail" id="email" required>
+                                <input type="email" class="form-control" placeholder="Seu e-mail" id="email" name="email" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control" placeholder="Empresa (opcional)" id="empresa">
+                                <input type="text" class="form-control" placeholder="Empresa (opcional)" id="empresa" name="empresa">
                             </div>
                             <div class="col-12">
-                                <select class="form-select" id="servico">
+                                <select class="form-select" id="servico" name="servico">
                                     <option value="" selected>Qual serviço você precisa?</option>
                                     <option>Recarga de cartuchos</option>
                                     <option>Compra de toners</option>
@@ -485,8 +484,7 @@
                                 </select>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control" rows="5" placeholder="Sua mensagem" id="mensagem"
-                                    required></textarea>
+                                <textarea class="form-control" rows="5" placeholder="Sua mensagem" id="mensagem" name="mensagem" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
@@ -499,18 +497,15 @@
                     <div class="card border-0 shadow-sm h-100">
                         <div class="card-body p-4">
                             <h4 class="mb-4">Informações de Contato</h4>
-
                             <div class="d-flex mb-4">
                                 <div class="me-3 text-primary">
                                     <i class="fas fa-map-marker-alt fa-2x"></i>
                                 </div>
                                 <div>
                                     <h5 class="mb-0">Endereço</h5>
-                                    <p class="mb-0">R. Conselheiro Dantas, Comercio - 9º andar<br>Salvador - BA - CEP
-                                        40015-070</p>
+                                    <p class="mb-0">R. Conselheiro Dantas, Comercio - 9º andar<br>Salvador - BA - CEP 40015-070</p>
                                 </div>
                             </div>
-
                             <div class="d-flex mb-4">
                                 <div class="me-3 text-primary">
                                     <i class="fas fa-phone-alt fa-2x"></i>
@@ -520,7 +515,6 @@
                                     <p class="mb-0">(71) 3494-2761<br>(71) 98255-9495 (WhatsApp)</p>
                                 </div>
                             </div>
-
                             <div class="d-flex mb-4">
                                 <div class="me-3 text-primary">
                                     <i class="fas fa-envelope fa-2x"></i>
@@ -530,7 +524,6 @@
                                     <p class="mb-0">contato@laserwork.com.br</p>
                                 </div>
                             </div>
-
                             <div class="d-flex">
                                 <div class="me-3 text-primary">
                                     <i class="fas fa-clock fa-2x"></i>
@@ -553,8 +546,7 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9880378899256!2d-38.51538892468791!3d-12.97157195991814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96d4c3!2sR.%20Conselheiro%20Dantas%20-%20Com%C3%A9rcio%2C%20Salvador%20-%20BA%2C%2040015-070!5e0!3m2!1spt-BR!2sbr!4v1689873178816!5m2!1spt-BR!2sbr"
                 width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
@@ -636,6 +628,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Scripts personalizados -->
     <script>
+        // Fecha o menu mobile ao clicar em um link
         document.querySelectorAll('.navbar-collapse .nav-link').forEach(function (link) {
             link.addEventListener('click', function () {
                 var navbarCollapse = document.querySelector('.navbar-collapse');
@@ -645,44 +638,39 @@
                 }
             });
         });
-        // Evento para o formulário de contato (já existente)
-        document.getElementById('formContato').addEventListener('submit', function (e) {
-            e.preventDefault();
 
-            var numero = '5571982559495';
-            var nome = document.getElementById('nome').value;
-            var email = document.getElementById('email').value;
-            var empresa = document.getElementById('empresa').value;
-            var servico = document.getElementById('servico').value;
-            var mensagem = document.getElementById('mensagem').value;
-
-            var texto = `Olá, meu nome é ${nome}\nEmail: ${email}\nEmpresa: ${empresa}\nServiço: ${servico}\nMensagem: ${mensagem}`;
-            var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-
-            window.open(url, '_blank');
-        });
+        // Envio do formulário de contato para WhatsApp
+        var formContato = document.getElementById('formContato');
+        if (formContato) {
+            formContato.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var numero = '5571982559495';
+                var nome = document.getElementById('nome').value;
+                var email = document.getElementById('email').value;
+                var empresa = document.getElementById('empresa').value;
+                var servico = document.getElementById('servico').value;
+                var mensagem = document.getElementById('mensagem').value;
+                var texto = `Olá, meu nome é ${nome}\nEmail: ${email}\nEmpresa: ${empresa}\nServiço: ${servico}\nMensagem: ${mensagem}`;
+                var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+                window.open(url, '_blank');
+            });
+        }
 
         // Evento para todos os botões "Comprar"
         document.querySelectorAll('.btn.btn-primary.w-100').forEach(function (btn) {
             btn.addEventListener('click', function (e) {
-                // Evita o comportamento padrão se for dentro de um form
                 e.preventDefault();
-
-                // Busca o nome do produto no card
                 var card = btn.closest('.product-card');
                 var produto = card ? card.querySelector('.card-title').innerText : 'Produto';
-
                 var numero = '5571982559495';
                 var texto = `Olá! Tenho interesse em comprar o produto: ${produto}.`;
                 var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-
                 window.open(url, '_blank');
             });
         });
 
-        // Animação ao rolar a página
+        // Suaviza a rolagem para links internos
         $(document).ready(function () {
-            // Suaviza a rolagem para links internos
             $('a[href^="#"]').on('click', function (event) {
                 var target = $(this.getAttribute('href'));
                 if (target.length) {
@@ -696,7 +684,6 @@
             // Adiciona classe ativa ao item do menu conforme a rolagem
             $(window).scroll(function () {
                 var scrollDistance = $(window).scrollTop() + 72;
-
                 $('section').each(function (i) {
                     if ($(this).position().top <= scrollDistance) {
                         $('.navbar-nav a.active').removeClass('active');
@@ -706,7 +693,6 @@
             }).scroll();
         });
     </script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>

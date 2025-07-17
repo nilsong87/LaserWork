@@ -346,16 +346,16 @@
                     <form id="formContato">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Seu nome" id="nome" required>
+                                <input type="text" class="form-control" placeholder="Seu nome" id="nome" name="nome" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Seu e-mail" id="email" required>
+                                <input type="email" class="form-control" placeholder="Seu e-mail" id="email" name="email" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control" placeholder="Empresa (opcional)" id="empresa">
+                                <input type="text" class="form-control" placeholder="Empresa (opcional)" id="empresa" name="empresa">
                             </div>
                             <div class="col-12">
-                                <select class="form-select" id="servico">
+                                <select class="form-select" id="servico" name="servico">
                                     <option value="" selected>Qual serviço você precisa?</option>
                                     <option>Locação de impressoras</option>
                                     <option>Manutenção</option>
@@ -364,7 +364,7 @@
                                 </select>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control" rows="5" placeholder="Sua mensagem" id="mensagem"
+                                <textarea class="form-control" rows="5" placeholder="Sua mensagem" id="mensagem" name="mensagem"
                                     required></textarea>
                             </div>
                             <div class="col-12">
@@ -505,6 +505,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Scripts personalizados -->
     <script>
+        // Fecha o menu mobile ao clicar em um link
         document.querySelectorAll('.navbar-collapse .nav-link').forEach(function (link) {
             link.addEventListener('click', function () {
                 var navbarCollapse = document.querySelector('.navbar-collapse');
@@ -514,6 +515,7 @@
                 }
             });
         });
+
         document.addEventListener('DOMContentLoaded', function () {
             // Redireciona botões/links para WhatsApp
             document.querySelectorAll('a, button').forEach(function (el) {
@@ -527,6 +529,8 @@
                     texto === 'solicitar'
                 ) {
                     el.addEventListener('click', function (e) {
+                        // Evita conflito com o submit do formulário
+                        if (el.type === 'submit' && el.closest('form')) return;
                         e.preventDefault();
                         const numero = '5571982559495';
                         const mensagem = 'Olá! Gostaria de informações sobre locação de impressoras.';
@@ -537,18 +541,21 @@
             });
 
             // Evento para o formulário de contato
-            document.getElementById('formContato').addEventListener('submit', function (e) {
-                e.preventDefault();
-                var numero = '5571982559495';
-                var nome = document.getElementById('nome').value;
-                var email = document.getElementById('email').value;
-                var empresa = document.getElementById('empresa').value;
-                var servico = document.getElementById('servico').value;
-                var mensagem = document.getElementById('mensagem').value;
-                var texto = `Olá, meu nome é ${nome}\nEmail: ${email}\nEmpresa: ${empresa}\nServiço: ${servico}\nMensagem: ${mensagem}`;
-                var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-                window.open(url, '_blank');
-            });
+            var formContato = document.getElementById('formContato');
+            if (formContato) {
+                formContato.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var numero = '5571982559495';
+                    var nome = document.getElementById('nome').value;
+                    var email = document.getElementById('email').value;
+                    var empresa = document.getElementById('empresa').value;
+                    var servico = document.getElementById('servico').value;
+                    var mensagem = document.getElementById('mensagem').value;
+                    var texto = `Olá, meu nome é ${nome}\nEmail: ${email}\nEmpresa: ${empresa}\nServiço: ${servico}\nMensagem: ${mensagem}`;
+                    var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+                    window.open(url, '_blank');
+                });
+            }
         });
     </script>
 </body>
