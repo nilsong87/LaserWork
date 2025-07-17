@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laser Work - Recarga de Toners e Locação de Impressoras</title>
-    <meta name="description" content="Laser Work - Soluções em impressão, recarga de cartuchos, venda de toners e locação de impressoras.">
+    <meta name="description"
+        content="Laser Work - Soluções em impressão, recarga de cartuchos, venda de toners e locação de impressoras.">
     <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -65,6 +66,8 @@
                         de toners e locação de impressoras com a melhor qualidade do mercado.</p>
                     <div class="animate__animated animate__fadeIn animate__delay-2s">
                         <a href="#servicos" class="btn btn-primary btn-lg me-2">Nossos Serviços</a>
+                        <br>
+                        <br>
                         <a href="tel:+5571982559495" class="btn btn-outline-light btn-lg">
                             <i class="fas fa-phone-alt me-2"></i>(71) 98255-9495
                         </a>
@@ -259,7 +262,7 @@
 
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card card h-100">
-                        <img src="images/TN-2250_B.jpg" class="card-img-top" alt="Toner Brother">
+                        <img src="images/TN-2250_B1.png" class="card-img-top" alt="Toner Brother">
                         <div class="card-body">
                             <h5 class="card-title">Toner Brother TN-2250</h5>
                             <p class="text-muted">Original - Alta Durabilidade</p>
@@ -276,7 +279,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card card h-100">
                         <span class="badge-discount">Frete Grátis</span>
-                        <img src="images/chamex.jpg" class="card-img-top" alt="Papel A4">
+                        <img src="images/chamex1.png" class="card-img-top" alt="Papel A4">
                         <div class="card-body">
                             <h5 class="card-title">Papel A4 75g 500 folhas</h5>
                             <p class="text-muted">Chamex - Pacote com 5 resmas</p>
@@ -292,7 +295,7 @@
 
                 <div class="col-md-6 col-lg-3">
                     <div class="product-card card h-100">
-                        <img src="images/ecotank.png" alt="Impressora Multifuncional">
+                        <img src="images/ecotank1.png" alt="Impressora Multifuncional">
                         <div class="card-body">
                             <h5 class="card-title">Impressora Epson EcoTank</h5>
                             <p class="text-muted">Tanque de tinta - Econômica</p>
@@ -351,11 +354,21 @@
             </div>
 
             <div class="brands-section d-flex flex-wrap justify-content-center align-items-center">
-                <img src="images/hp.png" alt="HP" title="HP">
-                <img src="images/epson.png" alt="Epson" title="Epson">
-                <img src="images/brother.png" alt="Brother" title="Brother">
-                <img src="images/canon.png" alt="Canon" title="Canon">
-                <img src="images/samsung.png" alt="Samsung" title="Samsung">
+                <a href="https://www.hp.com/br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/hp.png" alt="HP" title="HP" class="brand-logo">
+                </a>
+                <a href="https://www.epson.com.br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/epson.png" alt="Epson" title="Epson" class="brand-logo">
+                </a>
+                <a href="https://www.brother.com.br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/brother.png" alt="Brother" title="Brother" class="brand-logo">
+                </a>
+                <a href="https://www.canon.com.br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/canon.png" alt="Canon" title="Canon" class="brand-logo">
+                </a>
+                <a href="https://www.samsung.com/br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/samsung.png" alt="Samsung" title="Samsung" class="brand-logo">
+                </a>
             </div>
         </div>
     </section>
@@ -450,20 +463,20 @@
 
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <form>
+                    <form id="formContato">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Seu nome" required>
+                                <input type="text" class="form-control" placeholder="Seu nome" id="nome" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Seu e-mail" required>
+                                <input type="email" class="form-control" placeholder="Seu e-mail" id="email" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control" placeholder="Empresa (opcional)">
+                                <input type="text" class="form-control" placeholder="Empresa (opcional)" id="empresa">
                             </div>
                             <div class="col-12">
-                                <select class="form-select">
-                                    <option selected>Qual serviço você precisa?</option>
+                                <select class="form-select" id="servico">
+                                    <option value="" selected>Qual serviço você precisa?</option>
                                     <option>Recarga de cartuchos</option>
                                     <option>Compra de toners</option>
                                     <option>Locação de impressoras</option>
@@ -472,7 +485,8 @@
                                 </select>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+                                <textarea class="form-control" rows="5" placeholder="Sua mensagem" id="mensagem"
+                                    required></textarea>
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
@@ -492,7 +506,8 @@
                                 </div>
                                 <div>
                                     <h5 class="mb-0">Endereço</h5>
-                                    <p class="mb-0">R. Conselheiro Dantas, Comercio - 9º andar<br>Salvador - BA - CEP 40015-070</p>
+                                    <p class="mb-0">R. Conselheiro Dantas, Comercio - 9º andar<br>Salvador - BA - CEP
+                                        40015-070</p>
                                 </div>
                             </div>
 
@@ -534,13 +549,14 @@
 
     <!-- Seção Mapa -->
     <div class="bg-light">
-    <div class="container-fluid p-0">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9880378899256!2d-38.51538892468791!3d-12.97157195991814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96d4c3!2sR.%20Conselheiro%20Dantas%20-%20Com%C3%A9rcio%2C%20Salvador%20-%20BA%2C%2040015-070!5e0!3m2!1spt-BR!2sbr!4v1689873178816!5m2!1spt-BR!2sbr"
-            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container-fluid p-0">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9880378899256!2d-38.51538892468791!3d-12.97157195991814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604e5ceeb064b%3A0x7ddb6ce56b96d4c3!2sR.%20Conselheiro%20Dantas%20-%20Com%C3%A9rcio%2C%20Salvador%20-%20BA%2C%2040015-070!5e0!3m2!1spt-BR!2sbr!4v1689873178816!5m2!1spt-BR!2sbr"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </div>
-</div>
 
     <!-- Rodapé -->
     <footer class="py-5">
@@ -612,32 +628,73 @@
     </footer>
 
 
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Scripts personalizados -->
     <script>
+        // Evento para o formulário de contato (já existente)
         document.getElementById('formContato').addEventListener('submit', function (e) {
             e.preventDefault();
 
-            // Substitua pelo número do WhatsApp desejado (apenas números, com DDD e DDI se necessário)
             var numero = '5571982559495';
-
             var nome = document.getElementById('nome').value;
             var email = document.getElementById('email').value;
             var empresa = document.getElementById('empresa').value;
             var servico = document.getElementById('servico').value;
             var mensagem = document.getElementById('mensagem').value;
 
-            var texto = `Olá, meu nome é ${nome}%0AEmail: ${email}%0AEmpresa: ${empresa}%0AServiço: ${servico}%0AMensagem: ${mensagem}`;
-
-            var url = `https://wa.me/${numero}?text=${texto}`;
+            var texto = `Olá, meu nome é ${nome}\nEmail: ${email}\nEmpresa: ${empresa}\nServiço: ${servico}\nMensagem: ${mensagem}`;
+            var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 
             window.open(url, '_blank');
         });
-    </script>
 
-    <!-- Bootstrap JS e dependências -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Scripts personalizados -->
+        // Evento para todos os botões "Comprar"
+        document.querySelectorAll('.btn.btn-primary.w-100').forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                // Evita o comportamento padrão se for dentro de um form
+                e.preventDefault();
+
+                // Busca o nome do produto no card
+                var card = btn.closest('.product-card');
+                var produto = card ? card.querySelector('.card-title').innerText : 'Produto';
+
+                var numero = '5571982559495';
+                var texto = `Olá! Tenho interesse em comprar o produto: ${produto}.`;
+                var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+                window.open(url, '_blank');
+            });
+        });
+
+        // Animação ao rolar a página
+        $(document).ready(function () {
+            // Suaviza a rolagem para links internos
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                }
+            });
+
+            // Adiciona classe ativa ao item do menu conforme a rolagem
+            $(window).scroll(function () {
+                var scrollDistance = $(window).scrollTop() + 72;
+
+                $('section').each(function (i) {
+                    if ($(this).position().top <= scrollDistance) {
+                        $('.navbar-nav a.active').removeClass('active');
+                        $('.navbar-nav a').eq(i).addClass('active');
+                    }
+                });
+            }).scroll();
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
