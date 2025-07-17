@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Impressoras | Laser Work</title>
+    <meta name="description"
+        content="Serviço especializado em manutenção de impressoras de todas as marcas. Conserto preventivo e corretivo com garantia.">
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/manutencao.css">
+    
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="fw-bold" style="color: var(--primary-color); font-size: 1.5rem;">LASER WORK</span>
+                <small class="d-block" style="font-size: 0.7rem; color: var(--dark-color);">Tecnologia em
+                    Impressão</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#locacao">Locação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contato">Contato</a>
+                    </li>
+                </ul>
+                <a href="../index.html#contato" class="btn btn-primary ms-lg-3">
+                    <i class="fas fa-phone-alt me-2"></i>Orçamento
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">Manutenção de Impressoras</h1>
+                    <p class="lead mb-4 animate__animated animate__fadeIn animate__delay-1s">Serviço especializado em conserto e manutenção preventiva para impressoras de todas as marcas e modelos.</p>
+                    <div class="animate__animated animate__fadeIn animate__delay-2s">
+                        <a href="#contato" class="btn btn-primary btn-lg me-2">Solicitar Orçamento</a>
+                        <br>
+                        <br>
+                        <a href="tel:+5571982559495" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone-alt me-2"></i>(71) 98255-9495
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Problemas Comuns -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Problemas que Resolvemos</h2>
+                <p class="text-muted">Atendemos todos os tipos de problemas em impressoras</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="problem-card card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-exclamation-triangle fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="text-center">Impressora não liga</h4>
+                            <p class="text-muted">Problemas de alimentação elétrica, fontes queimadas ou falhas na placa principal.</p>
+                            <ul class="text-muted">
+                                <li>Teste de fonte</li>
+                                <li>Substituição de componentes</li>
+                                <li>Reparo de placas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="problem-card card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-print fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="text-center">Papel engasgando</h4>
+                            <p class="text-muted">Problemas no caminho do papel, rolos ressecados ou sujos, ou sensores defeituosos.</p>
+                            <ul class="text-muted">
+                                <li>Limpeza dos rolos</li>
+                                <li>Substituição de componentes</li>
+                                <li>Calibração de sensores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="problem-card card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-tint fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="text-center">Manchas na impressão</h4>
+                            <p class="text-muted">Toner vazando, tambor danificado ou problemas no fusor.</p>
+                            <ul class="text-muted">
+                                <li>Limpeza interna</li>
+                                <li>Substituição do tambor</li>
+                                <li>Reparo do fusor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="problem-card card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-wifi fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="text-center">Problemas de conexão</h4>
+                            <p class="text-muted">Falhas na conexão USB, Wi-Fi ou rede.</p>
+                            <ul class="text-muted">
+                                <li>Atualização de drivers</li>
+                                <li>Configuração de rede</li>
+                                <li>Reparo de interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="problem-card card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-barcode fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="text-center">Erros de impressão</h4>
+                            <p class="text-muted">Linhas faltando, impressão fraca ou distorcida.</p>
+                            <ul class="text-muted">
+                                <li>Limpeza de cabeçotes</li>
+                                <li>Alinhamento de cartuchos</li>
+                                <li>Calibração</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="problem-card card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-cogs fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="text-center">Manutenção preventiva</h4>
+                            <p class="text-muted">Serviços para evitar problemas futuros e prolongar a vida útil do equipamento.</p>
+                            <ul class="text-muted">
+                                <li>Limpeza interna completa</li>
+                                <li>Lubrificação</li>
+                                <li>Verificação de componentes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Como Funciona -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Como Funciona Nosso Serviço</h2>
+                <p class="text-muted">Processo simples e transparente para resolver seus problemas</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="step-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4>1. Contato</h4>
+                        <p class="text-muted">Entre em contato por telefone, WhatsApp ou formulário para descrever o problema.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>2. Diagnóstico</h4>
+                        <p class="text-muted">Nossos técnicos avaliam o problema e fornecem um orçamento sem compromisso.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="text-center p-4">
+                        <div class="step-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>3. Reparo</h4>
+                        <p class="text-muted">Executamos o serviço com peças de qualidade e fornecemos garantia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Benefícios -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Por que escolher nosso serviço de manutenção?</h2>
+                    <div class="d-flex mb-4">
+                        <div class="me-3">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Técnicos Certificados</h5>
+                            <p class="mb-0">Profissionais treinados e certificados pelas principais fabricantes.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-3">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Peças Originais</h5>
+                            <p class="mb-0">Utilizamos peças originais ou de qualidade equivalente.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-3">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Garantia</h5>
+                            <p class="mb-0">Todos os serviços têm garantia de 90 dias.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <i class="fas fa-check-circle fa-2x"></i>
+                        </div>
+                        <div>
+                            <h5>Atendimento Rápido</h5>
+                            <p class="mb-0">Serviço em até 24 horas para empresas na região metropolitana.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../images/tecnicomanutencao.png" alt="Técnico trabalhando em impressora" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Marcas Atendidas -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Marcas que Atendemos</h2>
+                <p class="text-muted">Trabalhamos com todas as principais marcas do mercado</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+
+            <div class="brands-section d-flex flex-wrap justify-content-center align-items-center">
+                <a href="https://www.hp.com/br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/hp.png" alt="HP" title="HP" class="brand-logo">
+                </a>
+                <a href="https://www.epson.com.br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/epson.png" alt="Epson" title="Epson" class="brand-logo">
+                </a>
+                <a href="https://www.brother.com.br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/brother.png" alt="Brother" title="Brother" class="brand-logo">
+                </a>
+                <a href="https://www.canon.com.br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/canon.png" alt="Canon" title="Canon" class="brand-logo">
+                </a>
+                <a href="https://www.samsung.com/br" target="_blank" rel="noopener noreferrer">
+                    <img src="images/samsung.png" alt="Samsung" title="Samsung" class="brand-logo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Solicite um Orçamento</h2>
+                <p class="text-muted">Descreva o problema da sua impressora e entraremos em contato</p>
+                <div class="mx-auto" style="width: 80px; height: 3px; background-color: var(--primary-color);"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <form id="formManutencao">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Seu nome" id="nome" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Seu telefone" id="telefone" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control" placeholder="Seu e-mail" id="email">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Marca e modelo da impressora" id="impressora" required>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" id="problema" required>
+                                    <option value="" selected>Tipo de problema</option>
+                                    <option>Impressora não liga</option>
+                                    <option>Papel engasgando</option>
+                                    <option>Manchas na impressão</option>
+                                    <option>Problemas de conexão</option>
+                                    <option>Erros de impressão</option>
+                                    <option>Manutenção preventiva</option>
+                                    <option>Outro problema</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Descreva o problema com detalhes" id="descricao" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">Solicitar Orçamento</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Atendimento Rápido</h4>
+
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-phone-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Telefones</h5>
+                                    <p class="mb-0">(71) 3494-2761<br>(71) 98255-9495 (WhatsApp)</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-envelope fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">E-mail</h5>
+                                    <p class="mb-0">manutencao@laserwork.com.br</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Atendimento no Local</h5>
+                                    <p class="mb-0">Serviço de visita técnica para empresas em Salvador e região metropolitana.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-clock fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Horário de Atendimento</h5>
+                                    <p class="mb-0">Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h<br>Plantão para emergências</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4">LASER WORK</h3>
+                    <p class="text-white-50">Especialistas em toners, recargas e soluções de impressão para sua empresa ou escritório.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/5571982559495" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-white-50 text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="recarga.html" class="text-white-50 text-decoration-none">Recarga</a></li>
+                        <li class="mb-2"><a href="vendas.html" class="text-white-50 text-decoration-none">Toners</a></li>
+                        <li class="mb-2"><a href="locacao.html" class="text-white-50 text-decoration-none">Locação</a></li>
+                        <li class="mb-2"><a href="manutencao.html" class="text-white-50 text-decoration-none">Manutenção</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Serviços</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="recarga.html" class="text-white-50 text-decoration-none">Recarga de Cartuchos</a></li>
+                        <li class="mb-2"><a href="vendas.html" class="text-white-50 text-decoration-none">Venda de Toners</a></li>
+                        <li class="mb-2"><a href="locacao.html" class="text-white-50 text-decoration-none">Locação de Impressoras</a></li>
+                        <li class="mb-2"><a href="manutencao.html" class="text-white-50 text-decoration-none">Manutenção</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Receba dicas de manutenção e ofertas especiais.</p>
+                    <form class="d-flex mb-3">
+                        <input type="email" class="form-control me-2" placeholder="Seu e-mail">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p class="small text-white-50">Ao assinar, você concorda com nossa Política de Privacidade.</p>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">&copy; 2015 Laser Work. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Termos de Serviço</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Scripts personalizados -->
+    <script>
+        // Evento para o formulário de manutenção
+        document.getElementById('formManutencao').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var numero = '5571982559495';
+            var nome = document.getElementById('nome').value;
+            var telefone = document.getElementById('telefone').value;
+            var email = document.getElementById('email').value;
+            var impressora = document.getElementById('impressora').value;
+            var problema = document.getElementById('problema').value;
+            var descricao = document.getElementById('descricao').value;
+
+            var texto = `Olá, meu nome é ${nome}\nTelefone: ${telefone}\nE-mail: ${email}\nImpressora: ${impressora}\nProblema: ${problema}\nDescrição: ${descricao}`;
+            var url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+            window.open(url, '_blank');
+        });
+
+        // Animação ao rolar a página
+        $(document).ready(function () {
+            // Suaviza a rolagem para links internos
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
