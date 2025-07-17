@@ -460,24 +460,24 @@
                     });
                 }
             });
-        
 
-        // Adiciona classe ativa ao item do menu conforme a rolagem
-        window.addEventListener('scroll', function () {
-            const scrollDistance = window.scrollY + 72;
 
-            document.querySelectorAll('section').forEach((section, i) => {
-                if (section.offsetTop <= scrollDistance) {
-                    document.querySelectorAll('.navbar-nav a.active').forEach(el => {
-                        el.classList.remove('active');
-                    });
-                    const navItems = document.querySelectorAll('.navbar-nav a');
-                    if (navItems[i]) {
-                        navItems[i].classList.add('active');
+            // Adiciona classe ativa ao item do menu conforme a rolagem
+            window.addEventListener('scroll', function () {
+                const scrollDistance = window.scrollY + 72;
+
+                document.querySelectorAll('section').forEach((section, i) => {
+                    if (section.offsetTop <= scrollDistance) {
+                        document.querySelectorAll('.navbar-nav a.active').forEach(el => {
+                            el.classList.remove('active');
+                        });
+                        const navItems = document.querySelectorAll('.navbar-nav a');
+                        if (navItems[i]) {
+                            navItems[i].classList.add('active');
+                        }
                     }
-                }
+                });
             });
-        });
         });
     </script>
 </body>
