@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | Laser Work</title>
+    <meta name="description" content="Vitrine de produtos Laser Work: toners, cartuchos, impressoras e papel.">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fw-bold" style="color: var(--primary-color); font-size: 1.5rem;">LASER WORK</span>
+                <small class="d-block" style="font-size: 0.7rem; color: var(--dark-color);">Tecnologia em Impressão</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="locacao.html">Locação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+                </ul>
+                <a href="index.html#contato" class="btn btn-primary ms-lg-3">
+                    <i class="fas fa-phone-alt me-2"></i>Orçamento
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Produtos -->
+    <section class="hero-section py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold mb-3 animate__animated animate__fadeInDown">Vitrine de Produtos</h1>
+            <p class="lead text-muted animate__animated animate__fadeIn animate__delay-1s">Encontre os melhores suprimentos, impressoras e acessórios para seu escritório.</p>
+        </div>
+    </section>
+
+    <!-- Barra de Categorias -->
+    <div class="container">
+        <nav class="category-bar mb-4">
+            <ul class="nav justify-content-center flex-wrap" id="categoryNav">
+                <li class="nav-item"><a class="nav-link active" href="#" data-category="todos"><i class="fas fa-th-large me-1"></i>Todos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-category="toners"><i class="fas fa-box-open me-1"></i>Toners</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-category="cartuchos"><i class="fas fa-fill-drip me-1"></i>Cartuchos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-category="impressoras"><i class="fas fa-print me-1"></i>Impressoras</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-category="papel"><i class="fas fa-file-alt me-1"></i>Papel</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-category="acessorios"><i class="fas fa-plug me-1"></i>Acessórios</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Vitrine de Produtos -->
+    <div class="container">
+        <div class="row g-4" id="productGrid">
+            <!-- Produtos são renderizados via JS -->
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="py-5 bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="text-white mb-4">LASER WORK</h3>
+                    <p class="text-white-50">Especialistas em toners, recargas e soluções de impressão para sua empresa ou escritório.</p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/5571982559495" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Início</a></li>
+                        <li class="mb-2"><a href="recarga.html" class="text-white-50 text-decoration-none">Recarga</a></li>
+                        <li class="mb-2"><a href="vendas.html" class="text-white-50 text-decoration-none">Toners</a></li>
+                        <li class="mb-2"><a href="locacao.html" class="text-white-50 text-decoration-none">Locação</a></li>
+                        <li class="mb-2"><a href="manutencao.html" class="text-white-50 text-decoration-none">Manutenção</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Serviços</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="recarga.html" class="text-white-50 text-decoration-none">Recarga de Cartuchos</a></li>
+                        <li class="mb-2"><a href="vendas.html" class="text-white-50 text-decoration-none">Venda de Toners</a></li>
+                        <li class="mb-2"><a href="locacao.html" class="text-white-50 text-decoration-none">Locação de Impressoras</a></li>
+                        <li class="mb-2"><a href="manutencao.html" class="text-white-50 text-decoration-none">Manutenção</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p class="text-white-50 mb-3">Receba ofertas exclusivas e novidades sobre toners.</p>
+                    <form class="d-flex mb-3">
+                        <input type="email" class="form-control me-2" placeholder="Seu e-mail">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p class="small text-white-50">Ao assinar, você concorda com nossa Política de Privacidade.</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">&copy; 2015 Laser Work. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="terms.html" class="text-white-50 text-decoration-none me-3">Termos de Serviço</a>
+                    <a href="privacy.html" class="text-white-50 text-decoration-none">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Produtos e filtro de categorias -->
+    <script>
+        // Produtos de exemplo
+        const produtos = [
+            {
+                nome: "Cartucho HP 664XL",
+                categoria: "cartuchos",
+                preco: "R$ XX,XX",
+                imagem: "images/664xl.png",
+                destaque: "10% OFF",
+                descricao: "Compatível - Alta Capacidade"
+            },
+            {
+                nome: "Toner Brother TN-2250",
+                categoria: "toners",
+                preco: "R$ XXX,XX",
+                imagem: "images/TN-2250_B1.png",
+                destaque: "",
+                descricao: "Original - Alta Durabilidade"
+            },
+            {
+                nome: "Papel A4 75g 500 folhas",
+                categoria: "papel",
+                preco: "R$ XXX,XX",
+                imagem: "images/chamex1.png",
+                destaque: "Frete Grátis",
+                descricao: "Chamex - Pacote com 5 resmas"
+            },
+            {
+                nome: "Impressora Epson EcoTank",
+                categoria: "impressoras",
+                preco: "R$ X.XXX,XX",
+                imagem: "images/ecotank1.png",
+                destaque: "",
+                descricao: "Tanque de tinta - Econômica"
+            },
+            {
+                nome: "Toner HP 12A",
+                categoria: "toners",
+                preco: "R$ XXX,XX",
+                imagem: "images/hp12a.png",
+                destaque: "",
+                descricao: "Compatível - Alto rendimento"
+            },
+            {
+                nome: "Cartucho Epson 664",
+                categoria: "cartuchos",
+                preco: "R$ XX,XX",
+                imagem: "images/epson664.png",
+                destaque: "",
+                descricao: "Original - Cores vibrantes"
+            },
+            {
+                nome: "Cabo USB Impressora",
+                categoria: "acessorios",
+                preco: "R$ XX,XX",
+                imagem: "images/cabo-usb.png",
+                destaque: "",
+                descricao: "Universal - 1,5m"
+            },
+            {
+                nome: "Impressora Brother HL-1212W",
+                categoria: "impressoras",
+                preco: "R$ XXX,XX",
+                imagem: "images/brother1212w.png",
+                destaque: "",
+                descricao: "Laser - Wi-Fi"
+            }
+        ];
+
+        // Renderiza produtos
+        function renderProdutos(categoria = "todos") {
+            const grid = document.getElementById('productGrid');
+            grid.innerHTML = '';
+            let filtrados = categoria === "todos" ? produtos : produtos.filter(p => p.categoria === categoria);
+            if (filtrados.length === 0) {
+                grid.innerHTML = `<div class="col-12 text-center py-5"><h4>Nenhum produto encontrado nesta categoria.</h4></div>`;
+                return;
+            }
+            filtrados.forEach(produto => {
+                grid.innerHTML += `
+                <div class="col-md-6 col-lg-3">
+                    <div class="product-card card h-100 position-relative">
+                        ${produto.destaque ? `<span class="badge-discount">${produto.destaque}</span>` : ''}
+                        <img src="${produto.imagem}" class="card-img-top product-img" alt="${produto.nome}">
+                        <div class="card-body">
+                            <h5 class="card-title">${produto.nome}</h5>
+                            <p class="product-category mb-1">${capitalize(produto.categoria)}</p>
+                            <p class="text-muted mb-2">${produto.descricao}</p>
+                            <div class="product-price mb-2">${produto.preco}</div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100 btn-comprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                `;
+            });
+        }
+
+        // Capitaliza categoria
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+
+        // Filtro de categorias
+        document.addEventListener('DOMContentLoaded', function () {
+            renderProdutos();
+            document.querySelectorAll('#categoryNav .nav-link').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelectorAll('#categoryNav .nav-link').forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                    renderProdutos(this.dataset.category);
+                });
+            });
+
+            // Botão comprar abre WhatsApp
+            document.getElementById('productGrid').addEventListener('click', function (e) {
+                if (e.target.classList.contains('btn-comprar')) {
+                    const card = e.target.closest('.product-card');
+                    const nome = card.querySelector('.card-title').innerText;
+                    const preco = card.querySelector('.product-price').innerText;
+                    const numero = '5571982559495';
+                    const texto = `Olá! Tenho interesse em comprar o produto: ${nome} (${preco}).`;
+                    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+                    window.open(url, '_blank');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
