@@ -24,7 +24,7 @@
 
 .category-bar .nav-link.active,
 .category-bar .nav-link:hover {
-    background: var(--primary-color, #e63946);
+    background: var(--primary-color, rgb(230, 57, 70));
     color: #fff;
 }
 
@@ -43,7 +43,7 @@
     position: absolute;
     top: 16px;
     left: 16px;
-    background: var(--primary-color, #e63946);
+    background: var(--primary-color, rgb(230, 57, 70, 0.8));
     color: #fff;
     font-size: 0.85rem;
     padding: 4px 12px;
